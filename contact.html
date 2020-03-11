@@ -33,7 +33,7 @@
             <a class="nav-link active" href="contact.html">Contact</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle active" href="read-now.html" id="navbarDropdown"
+            <a class="nav-link dropdown-toggle" href="read-now.html" id="navbarDropdown"
                 role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Read now!
             </a>
@@ -51,7 +51,7 @@
   </header>
 
   <div class="bg-img">
-    <div class="contact-sheet container">
+    <div class="contact-sheet">
       <h1>Contact information:</h1>
       <h5>If you'd like to get in touch with the maker of this site, feel free to fill out the following form. I'll get
         back to you as soon as I can!</h5>
@@ -62,22 +62,24 @@
         <input type="text" id="lname" name="lname">
         <br>
         <label for="reason">Reason for contacting me:</label><br>
-        <input type="text" id="reason" class="form-reason-style" name="reason"><br>
+        <textarea name="reason" rows="5" cols="30"> Enter text here...</textarea>
 
         <label for="email">Enter your email:</label><br>
-        <input type="email" id="email" name="email"><br>
-
+        <input type="email" id="email" name="email" required><br>
+        <br>
         <label for="submit">Send your message!</label><br>
         <input type="submit" value="Submit"><br>
       </form><br>
 
-      <h5>Thanks! I'll get back to you as soon as I can!</h5><br>
+      <h5>Thanks! I'll get back to you as soon as I'm able!</h5><br>
 
     </div>
   </div>
   <footer>
-    <div class="footer-style theme-bg">
+    <div class="container-fluid footer-style theme-bg ">
+      <p class="footer-txt">
       Copyright Patrik Schöön-Axelsson 2020. All images sourced under the Creative Commons license.
+    </p>
     </div>
   </footer>
 
