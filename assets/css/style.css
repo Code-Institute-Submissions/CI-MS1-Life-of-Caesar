@@ -1,17 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700|Roboto+Slab:400,500,600,700&display=swap');
 
-body, html{
-    height: 100%;
-}
+/* Rem-compliance site-wide font styles*/
+
+html { 
+    font-size: 62.5%; /* 10px */
+} 
+
+/* Styles used on multiple pages */
+
 .navbar{
     position: fixed;
-    top: 0px;
+    font-size: 1.5rem;
+    top: 0%;
     width: 100%;
     z-index: 999999;
 }
 .bg-img{
     background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../images/caesar_hero_img.jpg");
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-attachment: fixed;
     background-position: center;
@@ -19,12 +25,13 @@ body, html{
     background-size: cover;
  
     }
-
 .hero-txt{
-    margin-top: 100px;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
     font-family: 'Merriweather', sans-serif;
     text-align: center;
     color: #fff;
+    font-size: 3rem;
 }
 .footer-style{
     color: #fff;
@@ -32,37 +39,47 @@ body, html{
     height: 5%;
     position: fixed;
     bottom: 0px;
+    margin-top: 5rem;
 }
 .footer-txt{
     font-family: 'Merriweather', sans-serif;
-     text-align: center;
-    font-size: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    text-align: center;
+    font-size: 1rem;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
 }
 
 /* index.html styles */
 
 
-
-.col-bg{
-    width: 90%;
-    min-height: 240px;
-    margin: 10px, 10px, 10px, 20px;
-
-}
 .theme-bg{
     font-family: 'Merriweather', sans-serif;
     background-color: #65272c;
     color: #fff;
 }
-.cta-clr-style{
+
+.col-style{
+  
     font-family: 'Merriweather', sans-serif;
     color: #fff;
+    font-size: 1.5rem;
+    padding-top: 0.75rem;
+    margin-top: 1rem;
+    
 }
-.cta-col-style{
-    padding-top: 10px;
-    margin-top: 5%;
+.cta-text{
+    color: #fff;
+    font-size: 1.2rem;
+}
+.cta-btn-style{
+    font-family: 'Merriweather', sans-serif;
+    min-height: 7rem;
+    min-width: 9rem;
+    font-size: 2rem;
+    padding-top: 1.75rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 0.5rem;
 }
 
 /* read-now.html specific styles */
@@ -70,27 +87,29 @@ body, html{
 .read-icon-styling{
     color: #65272c;
     background-color: #fff;
-    margin: 0px;
-    padding: 0px;
+    margin: 0rem;
+    padding: 0rem;
 }
 
 .chapter{
     font-family: 'Roboto Slab', sans-serif;
-    margin: 5%;
-    min-width: 80%;
-    min-height: 140px;
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin: 3.75rem;
+    min-width: 75vw;
+    min-height: 10vh;
     background-color: #fff;
     color: black;
-    border: 3px;
+    border: 0.3rem;
     border-color: #000000;
-    padding: 10px;
-    border-radius: 25px;
+    border-radius: 0.5rem;
 }
 .chapter-nav{
     float: right;
+    min-height: 1rem;
 }
 .chapter-nav-item{
-    margin-left: 15px;
+    margin-left: 0.75rem;
     font-family: 'Merriweather', sans-serif;
     text-decoration: none;
     color: #fff;
@@ -99,36 +118,71 @@ body, html{
 /* contact.html specific styles */
 
 .contact-sheet{
-    margin-top: 15vh;
-    margin-bottom: 15vh;
+    margin-top: 15rem;
+    margin-bottom: 1rem;
     background-color: #fff;
     font-family:'Roboto Slab', sans-serif;
     color: #000000;
  }
 .contact-sheet h1, h5{
-    padding: 15px;
+    padding: 0.75rem;
     text-align: center;
 }
 .contact-sheet form{
-    padding: 5px;
+    padding: 0.75rem;
+}
+/* about.html specific styles */
+
+.about-style{
+    color: #fff;    
+    font-family:'Roboto Slab', sans-serif;
+    margin: 1rem;
+}
+.about-header{
+    margin-top: 2rem;
+    color: #fff;
+    font-family: 'Merriweather', sans-serif;
+    text-align: center;
+
+}
+.about-subheader{
+    margin: 0.75rem, 0, 0,75rem;
+    color: #fff;
+    font-family:'Roboto Slab', sans-serif;
+}
+.carousel-img-styles{
+    border: 0.5rem;
+    min-height: 25rem;
+    width: 10vw;
+    margin: 0.5rem, 1rem, 0.5vh;  
+}
+.carousel-caption{
+    color: #fff;
+    font-size: 1rem;
 }
 
-/* Ensuring responsiveness on smaller screens */
+/* Ensuring responsiveness on smaller screens, all pages */
 
 @media screen and (max-width: 992px) {
+    .hero-txt{
+        margin-left:2.5rem;
+        margin-right:2.5rem;
+    }
 
-    .col-xs-12{
-        margin-left: 15px;
-        margin-right: 15px;
+    .col-sm-12{
+        margin: 1rem, 0.75rem, 1rem;
+        
     }
         /* Including media-query for these two classes to ensure correct Navbar chapter-transition in the read-now-*html series of files on smaller screens. */
     
     .chapter-nav-item{
-            margin-left: 10px;
+            margin-left: 2rem;
             font-family: 'Merriweather', sans-serif;
             text-decoration: none;
             color: #fff;
-            font-size: 14px;
+            font-size: 0.625rem;
         }
+   
     }
+
  /*End of specific resolution media-query content*/
