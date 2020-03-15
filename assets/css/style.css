@@ -4,16 +4,26 @@
 
 html { 
     font-size: 62.5%; /* 10px */
-} 
+}
 
 /* Styles used on multiple pages */
+
+p{
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 1.5rem;    
+    color: #fff;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+}
 
 .navbar{
     position: fixed;
     font-size: 1.5rem;
+    min-height: 1.75rem;
     top: 0%;
     width: 100%;
     z-index: 999999;
+    margin-bottom: 10vh;
 }
 .bg-img{
     background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../images/caesar_hero_img.jpg");
@@ -27,26 +37,22 @@ html {
     }
 .hero-txt{
     margin-top: 5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     font-family: 'Merriweather', sans-serif;
     text-align: center;
     color: #fff;
-    font-size: 3rem;
+    font-size: 1.5rem;
 }
-.footer-style{
+.footer-style{    
+    font-family: 'Merriweather', sans-serif;
+    font-size: 1rem;
+    overflow: hidden;
     color: #fff;
     width: 100%;
-    height: 5%;
+    height: 3vh;
     position: fixed;
     bottom: 0px;
-    margin-top: 5rem;
-}
-.footer-txt{
-    font-family: 'Merriweather', sans-serif;
     text-align: center;
-    font-size: 1rem;
-    padding-top: 0.625rem;
-    padding-bottom: 0.625rem;
 }
 
 /* index.html styles */
@@ -59,27 +65,25 @@ html {
 }
 
 .col-style{
-  
     font-family: 'Merriweather', sans-serif;
     color: #fff;
     font-size: 1.5rem;
-    padding-top: 0.75rem;
-    margin-top: 1rem;
-    
+    margin: 0;
+}
+.col-header{
+    color:#fff;
+    padding-bottom: 1rem, 0rem, 1rem;
 }
 .cta-text{
     color: #fff;
-    font-size: 1.2rem;
 }
 .cta-btn-style{
     font-family: 'Merriweather', sans-serif;
-    min-height: 7rem;
-    min-width: 9rem;
-    font-size: 2rem;
-    padding-top: 1.75rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    border-radius: 0.5rem;
+    min-height: 1.75rem;
+    min-width: 2rem;
+    font-size: 1.2rem;
+    padding: 0.75rem, 0.5rem, 0.75;
+    text-align: center;
 }
 
 /* read-now.html specific styles */
@@ -92,27 +96,42 @@ html {
 }
 
 .chapter{
-    font-family: 'Roboto Slab', sans-serif;
-    font-size: 1.5rem;
-    padding: 1rem;
-    margin: 3.75rem;
+   
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    
+    margin-bottom: 2.5%;
     min-width: 75vw;
     min-height: 10vh;
     background-color: #fff;
-    color: black;
+    color: #000000;
     border: 0.3rem;
-    border-color: #000000;
     border-radius: 0.5rem;
+}
+.chapter p{
+    margin: 1rem;
+    color: #000;
+    font-size: 1.5rem;
+    padding: 0.75rem;
 }
 .chapter-nav{
     float: right;
-    min-height: 1rem;
+    min-height: 2.5rem;
+    text-decoration: none;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 .chapter-nav-item{
     margin-left: 0.75rem;
     font-family: 'Merriweather', sans-serif;
+    font-size: 2rem;
     text-decoration: none;
     color: #fff;
+}
+/* Rescaling font-size in the chapter nav dropdown */
+
+.dropdown-item{ 
+    font-size: 1.5rem;
 }
 
 /* contact.html specific styles */
@@ -133,37 +152,49 @@ html {
 }
 /* about.html specific styles */
 
-.about-style{
-    color: #fff;    
-    font-family:'Roboto Slab', sans-serif;
-    margin: 1rem;
-}
+
 .about-header{
-    margin-top: 2rem;
+    margin-top: 3rem;
     color: #fff;
     font-family: 'Merriweather', sans-serif;
     text-align: center;
+    overflow: hidden;
 
 }
 .about-subheader{
-    margin: 0.75rem, 0, 0,75rem;
+    text-align: center;
+    margin: auto;
     color: #fff;
     font-family:'Roboto Slab', sans-serif;
 }
-.carousel-img-styles{
-    border: 0.5rem;
-    min-height: 25rem;
-    width: 10vw;
-    margin: 0.5rem, 1rem, 0.5vh;  
+
+.carousel-container{
+    margin: auto;
+    max-height: 720px;
+    width: 100%;
+    overflow: hidden;
 }
-.carousel-caption{
-    color: #fff;
-    font-size: 1rem;
+/* Styling the carousel images to resize properly within the container */
+
+.carousel-img{
+    height: 640px;
+    width: 100%;
 }
 
+/* Styling the captions for readability without covering the text */
+
+.carousel-caption{
+    overflow: hidden;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 1.25rem;
+    
+}
 /* Ensuring responsiveness on smaller screens, all pages */
 
 @media screen and (max-width: 992px) {
+
     .hero-txt{
         margin-left:2.5rem;
         margin-right:2.5rem;
@@ -173,16 +204,42 @@ html {
         margin: 1rem, 0.75rem, 1rem;
         
     }
-        /* Including media-query for these two classes to ensure correct Navbar chapter-transition in the read-now-*html series of files on smaller screens. */
+    
+/* Including media-query for classes to ensure correct Navbar chapter-transition in the read-now-*html series of files on smaller screens. */
     
     .chapter-nav-item{
             margin-left: 2rem;
             font-family: 'Merriweather', sans-serif;
             text-decoration: none;
             color: #fff;
-            font-size: 0.625rem;
+            font-size: 1rem;
         }
-   
+    .chapter{
+        margin: 2.5vh;
     }
+    .carousel-container{
+        margin: auto;
+        max-height: 640px;
+        width: 100%;
+        overflow: hidden;
+    }
+    /* Styling the carousel images to resize properly within the container */
+    
+    .carousel-img{
+        height: 460px;
+        width: auto;
+    }
+
+    }
+   
+@media screen and (min-width: 992px){
+
+    /* Manually added to html-elements on specific pages to disable scrolling when it is not needed. */
+
+.locked-scroll{
+    overflow: hidden;
+}
+
+}
 
  /*End of specific resolution media-query content*/
