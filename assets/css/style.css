@@ -147,6 +147,7 @@ p{
 /* Rescaling font-size in the chapter nav dropdown */
 
 .dropdown-item a{ 
+    color: #000000;
     font-size: 1.5rem;
 }
 
@@ -185,7 +186,7 @@ p{
 }
 
 .carousel-container{
-    margin: 2.5vh;
+    margin: auto;
     max-height: 640px;
     width: auto;
     overflow: hidden;
@@ -225,7 +226,7 @@ p{
         margin: 2.5vh;
     }
     .carousel-container{
-        margin-bottom: 0px;
+        margin: auto;
         height: 720px;
         width: auto;
         overflow: hidden;
