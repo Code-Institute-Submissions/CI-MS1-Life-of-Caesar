@@ -5,6 +5,9 @@
 html { 
     font-size: 62.5%; /* 10px */
 }
+header {
+    margin-bottom: 7.5vh;
+}
 
 /* Styles used on multiple pages */
 
@@ -27,7 +30,6 @@ p{
 .navbar a{
     text-decoration: none;
     font-size: 1.5rem;
-    color: #fff;
 }
 .navbar a:hover{
     text-transform: uppercase;
@@ -111,8 +113,7 @@ p{
     padding: 0rem;
 }
 
-.chapter{
-   
+.chapter{   
     margin-left: 2.5%;
     margin-right: 2.5%;
     margin-bottom: 2.5%;
@@ -145,15 +146,16 @@ p{
 }
 /* Rescaling font-size in the chapter nav dropdown */
 
-.dropdown-item{ 
+.dropdown-item a{ 
     font-size: 1.5rem;
 }
 
 /* contact.html specific styles */
 
 .contact-sheet{
-    margin-top: 15rem;
-    margin-bottom: 1rem;
+    
+    margin: auto;
+    overflow: hidden;
     background-color: #fff;
     font-family:'Roboto Slab', sans-serif;
     color: #000000;
@@ -166,7 +168,6 @@ p{
     padding: 0.75rem;
 }
 /* about.html specific styles */
-
 
 .about-header{
     margin-top: 3rem;
@@ -184,7 +185,7 @@ p{
 }
 
 .carousel-container{
-    margin: auto;
+    margin: 2.5vh;
     max-height: 640px;
     width: auto;
     overflow: hidden;
@@ -194,16 +195,9 @@ p{
 .carousel-img{
     height: 460px;
     width: 340px;
+    margin: 0px;
 }
 
-/* Styling the captions for readability without covering the text */
-
-.carousel-caption{
-    overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    font-size: 1.25rem;    
-}
 /* Ensuring responsiveness on smaller screens, all pages */
 
 @media screen and (max-width: 992px) {
@@ -231,9 +225,13 @@ p{
         margin: 2.5vh;
     }
     .carousel-container{
-        margin: auto;
-        max-height: 640px;
-        width: 100%;
+        margin-bottom: 0px;
+        height: 720px;
+        width: auto;
+        overflow: hidden;
+    }
+    .carousel-funfact{
+        margin: 2vh;
         overflow: hidden;
     }
     /* Styling the carousel images to resize properly within the container */
