@@ -18,7 +18,11 @@ p{
     margin-left: 2.5vw;
     margin-right: 2.5vw;
 }
-
+.col-subheader{
+    margin-top: 5rem;
+    margin: auto;
+    text-align: center;
+}
 .navbar{
     position: fixed;
     min-height: 1.75rem;
@@ -54,6 +58,7 @@ p{
 }
 .footer-style{    
     font-family: 'Merriweather', sans-serif;
+    min-height: 2.5rem;
     font-size: 1rem;
     overflow: hidden;
     color: #fff;
@@ -88,7 +93,6 @@ p{
     text-transform: uppercase;
 }
 .col-header{
-
     color:#fff;
     padding-bottom: 1rem, 0rem, 1rem;
 }
@@ -209,7 +213,7 @@ p{
     }
 
     .col-sm-12{
-        margin: 1rem, 0.75rem, 1rem;
+        margin: 5rem, 0.75rem, 5rem;
         
     }
     
@@ -227,6 +231,7 @@ p{
     }
     .carousel-container{
         margin: auto;
+        margin-bottom: 0px;
         height: 720px;
         width: auto;
         overflow: hidden;
@@ -235,11 +240,15 @@ p{
         margin: 2vh;
         overflow: hidden;
     }
+    .carousel{
+        margin-bottom: 0px;
+    }
     /* Styling the carousel images to resize properly within the container */
     
     .carousel-img{
         height: 260px;
         width: auto;
+        margin: 0px, 0px, 0px;
     }
 
     }
@@ -251,6 +260,10 @@ p{
 .locked-scroll{
     overflow: hidden;
 }
+col-sm-12{
+    margin: 1rem, 0.75rem, 5rem;
+    
+}   
 
 }
 
