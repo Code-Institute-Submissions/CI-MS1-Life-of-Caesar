@@ -82,7 +82,9 @@ p{
     font-family: 'Merriweather', sans-serif;
     color: #fff;
     font-size: 1.5rem;
-    margin-bottom: 2.5vh;
+    max-width: 95%;
+    margin-bottom: 4.5%;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 .col-style a{
     text-decoration: none;
@@ -94,7 +96,7 @@ p{
 }
 .col-header{
     color:#fff;
-    padding-bottom: 1rem, 0rem, 1rem;
+    padding: 1rem, 0rem, 1rem;
 }
 .cta-text{
     color: #fff;
@@ -103,8 +105,9 @@ p{
     font-family: 'Merriweather', sans-serif;
     min-height: 2.5vh;
     min-width: 5vw;
-    font-size: 1.2rem;
+    font-size: 2.75rem;
     padding: 0.75rem, 0.5rem, 0.75;
+    margin: 2rem;
     text-align: center;
 }
 
@@ -157,6 +160,10 @@ p{
 
 /* contact.html specific styles */
 
+.contact-form-names{
+    margin-right: 10px;
+    margin-left: 10px;
+}
 .contact-sheet{
     
     margin: auto;
@@ -170,8 +177,8 @@ p{
     text-align: center;
 }
 .contact-sheet form{
-    padding: 0.75rem;
-}
+    padding: 1.75rem;
+    }
 /* about.html specific styles */
 
 .about-header{
@@ -229,27 +236,31 @@ p{
     .chapter{
         margin: 2.5vh;
     }
-    .carousel-container{
-        margin: auto;
-        margin-bottom: 0px;
-        height: 720px;
-        width: auto;
-        overflow: hidden;
-    }
     .carousel-funfact{
         margin: 2vh;
         overflow: hidden;
     }
-    .carousel{
-        margin-bottom: 0px;
-    }
+
     /* Styling the carousel images to resize properly within the container */
-    
-    .carousel-img{
-        height: 260px;
-        width: auto;
-        margin: 0px, 0px, 0px;
+    .carousel-item{
+        height: 440px;
     }
+    
+.carousel-img-style{
+    height: 240px;
+    width: auto;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    
+    
+}
+.carousel-item p{
+    font-size: 1rem;
+    height: 60%;
+    margin-top:0px;
+    margin-bottom: 45px;
+    display: block;
+}
 
     }
    
@@ -260,10 +271,21 @@ p{
 .locked-scroll{
     overflow: hidden;
 }
-col-sm-12{
+.col-sm-12{
     margin: 1rem, 0.75rem, 5rem;
     
-}   
+}
+.carousel-img-style{
+    height: 540px;
+    width: 360px;
+    margin-bottom: 10px;
+}
+.carousel-item p{
+    height: 45px;
+    margin-top:10px;
+    margin-bottom: 35px;
+    display: block;
+}
 
 }
 
