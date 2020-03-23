@@ -55,7 +55,6 @@ p{
     font-family: 'Merriweather', sans-serif;
     text-align: center;
     color: #fff;
-    font-size: 1.5rem;
 }
 .footer-style{    
     font-family: 'Merriweather', sans-serif;
@@ -165,7 +164,7 @@ p{
     margin-left: 10px;
 }
 .contact-sheet{
-    
+    padding: 5px 5px 5px;
     margin: auto;
     overflow: hidden;
     background-color: #fff;
@@ -177,7 +176,10 @@ p{
     text-align: center;
 }
 .contact-sheet form{
+    font-size: 1.75rem;
+    margin: auto;
     padding: 1.75rem;
+    margin: 2rem;
     }
 /* about.html specific styles */
 
@@ -261,6 +263,22 @@ p{
     margin-bottom: 45px;
     display: block;
 }
+
+    .contact-sheet form{
+        font-size: 1rem;
+        margin: auto;
+        padding: 1.5rem;
+        margin: 1.75rem;
+ }
+ .contact-sheet{
+    
+    margin: auto;
+    overflow: hidden;
+    max-width: 95%;
+    background-color: #fff;
+    font-family:'Roboto Slab', sans-serif;
+    margin: 2.5% 2% 2.5%;
+ }
 
     }
    
