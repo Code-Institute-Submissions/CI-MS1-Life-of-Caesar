@@ -13,9 +13,9 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- Local CSS link-->
   <link rel="stylesheet" href="assets/css/style.css">
-   <!-- Adding local favicon-->
-   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-   <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <!-- Adding local favicon-->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body class="bg-img">
@@ -54,39 +54,43 @@
     </nav>
   </header>
 
-  <div class="bg-img">
-    <div class="container contact-sheet">
-      <h1>Contact information:</h1>
-      <h5>If you'd like to get in touch with the maker of this site, feel free to fill out the following form. I'll get
-        back to you as soon as I can!</h5>
-      <form>
-        <div class="row inline-row">
-          <label class="contact-form-names" for="fname">First name: </label>
-          <input type="text" id="fname" name="fname">
-          <br>
-          <label class="contact-form-names" for="lname">Last name: </label>
-          <input type="text" id="lname" name="lname">
-          <br>
+  <!-- Reworked this section to make it more responsive and align better with bootstrap, using documentation found here: https://getbootstrap.com/docs/4.0/components/forms/
+  -->
+  <div class="container contact-sheet">
+    <h1>Contact Form</h1>
+    <h3>If you'd like me to get in touch with you, please don't hesitate to fill in this form!</h3>
+
+    <form>
+      <div class="form-row">
+
+
+        <div class="col-sm-4 form-group">
+          <label for="fname">First name:</label>
+          <input type="text" class="form-control" id="fname" placeholder="First name">
         </div>
-        
-        <label for="reason">Reason for contacting me:</label>
+        <div class="col-sm-4 form-group">
+          <label for="lname">Last name:</label>
+          <input type="text" class="form-control" id="lname" placeholder="Lastname">
+        </div>
         <br>
-        <textarea id="reason" name="reason" rows="5" cols="30"> Enter text here...</textarea>
+        <div class="col-sm-4 form-group">
+          <label for="email">E-mail:</label>
+          <input type="email" class="form-control" id="E-mail" placeholder="E-mail" required>
+        </div>
         <br>
-        <label for="email">Enter your email:</label>
+        <div class="col form-group">
+          <label for="reason">Please type in your message:</label>
+          <textarea class="form-control" id="reason" rows="3" placeholder="Reason for contacting me..."></textarea>
+        </div>
         <br>
-        <input type="email" id="email" name="email" required>
-        <br>
-        <label for="submit">Send your message!</label>
-        <br>
-        <input type="submit" id="submit" value="Submit">
-        <br>
-      </form>
-
-      <h5>Thanks! I'll get back to you as soon as I'm able!</h5><br>
-
-    </div>
+        <div class="col-sm-12 form-group">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+      <h3>Thanks for reaching out! I'll get back to you as soon as I can!</h3>
   </div>
+  </form>
+
   <footer>
     <div class="container-fluid footer-style theme-bg ">
       <p class="footer-txt">
