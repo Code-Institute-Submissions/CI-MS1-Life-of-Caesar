@@ -60,10 +60,10 @@
     <h1>Contact Form</h1>
     <h3>If you'd like me to get in touch with you, please don't hesitate to fill in this form!</h3>
 
-    <form>
+  <!-- Form currently has neither POST or GET, because I have no configured server to pick up the data. It's a strictly aesthetic element, for now. -->
+  
+    <form">
       <div class="form-row">
-
-
         <div class="col-sm-4 form-group">
           <label for="fname">First name:</label>
           <input type="text" class="form-control" id="fname" placeholder="First name">
@@ -75,12 +75,12 @@
         <br>
         <div class="col-sm-4 form-group">
           <label for="email">E-mail:</label>
-          <input type="email" class="form-control" id="E-mail" placeholder="E-mail" required>
+          <input type="email" class="form-control" id="email" placeholder="E-mail" required>
         </div>
         <br>
         <div class="col form-group">
           <label for="reason">Please type in your message:</label>
-          <textarea class="form-control" id="reason" rows="3" placeholder="Reason for contacting me..."></textarea>
+          <textarea class="form-control" id="reason" rows="3" placeholder="Reason for contacting me..." required></textarea>
         </div>
         <br>
         <div class="col-sm-12 form-group">
