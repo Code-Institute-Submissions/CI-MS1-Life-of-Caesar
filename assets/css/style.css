@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 @import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,700|Roboto+Slab:400,600,700&display=swap');
 
 /* Rem-compliant site-wide font styles*/
@@ -40,6 +42,8 @@ p{
     color: #fff;
 }
 .bg-img{
+    background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.5))), url("../images/caesar_hero_img.jpg");
+    background-image:-o-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../images/caesar_hero_img.jpg");
     background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../images/caesar_hero_img.jpg");
     width: 100%;
     height: 100%;
